@@ -47,8 +47,5 @@ age: 12
 ];
 const username4 = username3.map((user, index) =>  ({name: user.name, age: user.age, id: index,}));
 console.log(username4);
-string="Jagrit"
-for(let i=string.length-1;i>=0;i--){
-    process.stdout.write(string[i]);
-}
+
 
