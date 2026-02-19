@@ -436,12 +436,13 @@ ol{
 .ending{
     display: flex;
     background-color: black;
+    color:white;
 }
 .end{
     width:100%;
     height: 100px;
     background-color: black;
-    color: black;
+    color: white;
 }  
 .books{
     padding-top: 30px;
@@ -450,6 +451,7 @@ ol{
 .Shopbop{
     margin-top: 50px;
     font-size: 0.8rem;
+    color:white;
 }
 .full{
     display: flex;
