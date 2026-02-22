@@ -31,13 +31,20 @@ boxes.forEach((box) => {
         }
         box.disabled=true;
         count++;
-checkWinner();
+let isWinner = checkWinner();
+        if(isWinner){
+            return;
+        }
+        if(count==9){
+            winnerMsg.innerText = "IT'S A DRAW 😀";
+            winnerMsgConatiner.classList.remove("hide");
+        }
 
     })
 });
 
 const showWinner = (winner) => {
-    winnerMsg.innerText = "WINNER is " + winner;
+    winnerMsg.innerText = "WINNER IS " + winner;
     winnerMsgConatiner.classList.remove("hide")
 }
 
@@ -53,14 +60,13 @@ const checkWinner = () => {
                 showWinner(pos1);
                 for(let i of boxes){
                     i.disabled = true;
-                }
+                }return true;
             
             
             }
-    }}if(count == 9) {        
-            winnerMsg.innerText = `Draw`;
-            winnerMsgConatiner.classList.remove('hide');
     }
+    
+}return false;
 }
 
 

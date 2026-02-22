@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: lightgreen;
+}
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    color: white;
+    height: 100px;
+    font-size: 2.4rem;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 2.5rem;
+    
+}
+.choice{
+    border-radius: 50%;
+    height:165px;
+    width: 165px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.choice:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    background-color: blue;
+} 
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.scoreBoard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5em;
+    
+}
+.msg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+#msg{
+    background-color: blue;
+    display: inline;
+    color: white;
+    padding: 1rem;
+    border-radius:1rem ;
+    
+    
+}
+#user-score{
+    font-size: 2.3rem;
+}
+#computer-score{
+    font-size: 2.3rem;
+}
+.resetGame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+#reset{
+    background-color: orangered;
+    display: inline;
+    color: blue;
+    padding: 1rem;
+    border-radius:1rem ;
+}
